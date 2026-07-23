@@ -1,11 +1,12 @@
-# Hardcoded values for the season and plant type
-season = "summer"  # TODO: Replace with input() to allow user interaction.
-plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
+# User inputs the season and plant type, for plant advice.
+season = input("What season are you working in?")
+plant_type = input("What type of plant are you working with?")
 
-# Variable to hold gardening advice
+# This variable holds the gardening advice to give to the user.
 advice = ""
 
-# Determine advice based on the season
+# This checks against the season the user specified
+# and provides advice accordingly.
 if season == "summer":
     advice += "Water your plants regularly and provide some shade.\n"
 elif season == "winter":
@@ -13,7 +14,8 @@ elif season == "winter":
 else:
     advice += "No advice for this season.\n"
 
-# Determine advice based on the plant type
+# This checks against the plant type the user specified
+# and provided advice accordingly.
 if plant_type == "flower":
     advice += "Use fertiliser to encourage blooms."
 elif plant_type == "vegetable":
